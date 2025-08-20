@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Access</title>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "MNATPL") {
+        window.location.href = "details.html";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter Password to View Details</h2>
+  <input type="password" id="password" />
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
